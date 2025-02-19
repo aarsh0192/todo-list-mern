@@ -1,0 +1,117 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  background-color: #f0f2f5; /* Light background for a clean look */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.home h2 {
+  font-size: 2rem; /* Slightly larger font size */
+  color: #333; /* Darker text for better contrast */
+  margin-bottom: 30px; /* Spacing below the heading */
+  text-align: center;
+  position: relative; /* For the pseudo-element */
+  display: inline-block; /* To contain the underline effect */
+}
+
+.home h2::after {
+  content: '';
+  display: block;
+  width: 60%; /* Underline width */
+  height: 3px; /* Underline thickness */
+  background-color: #007bff; /* A cool blue color for the underline */
+  position: absolute;
+  bottom: -10px; /* Position the underline below the text */
+  left: 50%; /* Center the underline */
+  transform: translateX(-50%); /* Center the underline */
+  border-radius: 2px; /* Slightly rounded edges for the underline */
+}
+
+.create_form input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc; /* Added a subtle border color */
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.home h3 {
+  font-size: 2rem; /* Same size as h2 */
+  color: #666; /* Medium gray for visibility without being too bold */
+  margin-top: 20px; /* Spacing above the text */
+  text-align: center;
+  font-weight: 300; /* Lighter font weight for a softer look */
+  opacity: 0.8; /* Slightly transparent to reduce focus */
+}
+
+.create_form input:focus {
+  border-bottom-color: black; /* Highlight border on focus */
+}
+
+.create_form button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.create_form button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 345px;
+  background-color: black;
+  color: white;
+  height: 40px;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 17px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.line_through {
+  text-decoration: line-through;
+  color: #888; /* Dimmed color for completed tasks */
+}
+
+.checkbox .icon {
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white; /* Ensure icon color matches the theme */
+}
+
+.task div span {
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.task div .icon {
+  cursor: pointer;
+  font-size: 16px;
+  color: white; /* Ensure icon color matches the theme */
+  transition: color 0.3s ease;
+}
+
+.task div .icon:hover {
+  color: #a0a0a0; /* Red color for delete icon on hover */
+}
