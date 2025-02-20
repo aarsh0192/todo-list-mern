@@ -9,6 +9,7 @@ A simple To-Do List application built using the MERN Stack (MongoDB, Express.js,
 **Database:** MongoDB (Mongoose ODM)<br>
 **Styling:** CSS<br><br>
 
-1. Install required dependancies and packages (React, MongoDB etc.).<br>
-2. Inside the folder Server, run the backend:    _npm start_
-3. Run:    _npm run dev_
+1. Install required packages (React, MongoDB etc.).<br>
+2. Install node modules both in main project file and inside the Server folder by running the command: _npm install_ .<br>
+3. Inside the folder Server, run the backend:    _npm start_
+4. Run:    _npm run dev_
